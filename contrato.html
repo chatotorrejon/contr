@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contrato</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/javascript.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <h2>Contrato de Servicios</h2>
+            <form action="accion.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required><br>
+                
+                <label for="servicio">Descripción del Servicio:</label>
+                <textarea id="servicio" name="servicio" rows="4" required></textarea><br>
+                
+                <button type="submit">Generar Contrato</button>
+            </form>
+            
+            <button id="imprimir" onclick="imprimirContrato()">Imprimir Contrato</button>
+        </div>
+
+        
+    </body>
+</html>
